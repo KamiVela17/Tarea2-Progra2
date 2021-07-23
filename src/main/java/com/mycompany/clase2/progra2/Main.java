@@ -20,14 +20,13 @@ public class Main {
         //encriptador
         int val;
 
-        for (int i = 0; i < str.length() ; i++) {
+        for (int i = 0; i < str.length(); i++) {
             val = (int) str.charAt(i) + llave;
             System.out.println("Encriptado -> " + val);
 
-       
         }
-        
-        for (int i = 0; i < str.length() ; i++) {
+
+        for (int i = 0; i < str.length(); i++) {
             val = (int) str.charAt(i) + llave;
 
             char[] convertedCharArray = Character.toChars(val - llave);
@@ -39,7 +38,14 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Tarea("ASCII", 0);
+        System.out.println("Ingrese la palabra que desea encriptar: ");
+
+        String str = sc.nextLine();
+
+        System.out.println("Ingrese la llave para encriptar encriptar: ");
+
+        int num = sc.nextInt();
+        Tarea(str, num);
 
     }
 }
