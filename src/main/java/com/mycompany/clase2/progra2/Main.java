@@ -42,7 +42,7 @@ public class Main {
 
         String str = sc.nextLine();
 
-        System.out.println("Ingrese la llave para encriptar encriptar: ");
+        System.out.println("Ingrese la llave para empezar a encriptar: ");
 
         int num = sc.nextInt();
         Tarea(str, num);
